@@ -1,4 +1,5 @@
-# Qdoz.StringTableCreator
+# Qdoz.StringTableCreator ![Icon](https://github.com/qdoz/Qdoz.StringTableCreator/blob/master/text_to_table_64px.png)
+
 Converts a list of values into a string table (ASCII-styled).
 
 Allows you to adjust the output, such as:
