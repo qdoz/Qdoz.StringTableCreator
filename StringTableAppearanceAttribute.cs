@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Qdoz
+namespace Qdoz.StringTableCreator
 {
     [AttributeUsage(AttributeTargets.Property)]
 	public sealed class StringTableAppearanceAttribute : Attribute

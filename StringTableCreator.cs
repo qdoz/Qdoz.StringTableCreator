@@ -81,7 +81,7 @@ namespace Qdoz.StringTableCreator
 		}
 
 
-		public static string PadBoth(string source, int length)
+		private static string PadBoth(string source, int length)
 		{
 			var spaces = length - source.Length;
 			var padLeft = spaces / 2 + source.Length;
@@ -89,7 +89,7 @@ namespace Qdoz.StringTableCreator
 		}
 
 
-		public static string Pad(string source, int length, TextAlignment textAlignment) => textAlignment switch
+		private static string Pad(string source, int length, TextAlignment textAlignment) => textAlignment switch
 		{
 			TextAlignment.Left => source.PadRight(length),
 			TextAlignment.Right => source.PadLeft(length),

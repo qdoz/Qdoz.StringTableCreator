@@ -1,4 +1,4 @@
-﻿namespace Qdoz
+﻿namespace Qdoz.StringTableCreator
 {
     public enum TextAlignment
 	{
