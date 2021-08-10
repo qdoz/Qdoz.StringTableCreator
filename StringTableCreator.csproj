@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <PackageId>Qdoz.StringTableCreator</PackageId>
+    <Authors>qdoz</Authors>
+    <Description>Converts a list of values into a "table" (ASCII-styled).</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+</Project>
