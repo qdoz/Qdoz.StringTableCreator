@@ -53,7 +53,7 @@ namespace Qdoz.StringTableCreator
 			return propInfo;
 		}
 
-		private static TAttribute GetAttribute<TAttribute, TSource>(TSource source, string propertyName)
+		private static TAttribute GetAttribute<TAttribute, TSource>(string propertyName)
 			where TAttribute : class
 			where TSource : class =>
 			typeof(TSource).GetProperties()
@@ -111,7 +111,7 @@ namespace Qdoz.StringTableCreator
 				TextAlignment = TextAlignment.Left,
 				FormatString = "",
 				Hide = false,
-				Appearance = GetAttribute<StringTableAppearanceAttribute, T>(default(T), p.Name),
+				Appearance = GetAttribute<StringTableAppearanceAttribute, T>(p.Name),
 			})
 
 			.GroupJoin(mapping
@@ -190,9 +190,7 @@ namespace Qdoz.StringTableCreator
 							  ColumnName: m.ColumnName,
 							  TextAlignment: TextAlignment.Left,
 							  FormatString: "",
-							  Hide: false)
-				)
-				.ToArray());
+							  Hide: false)).ToArray());
 
 		public static string CreateTable<T>(this IEnumerable<T> list,
 									 params (Expression<Func<T, object>> PropertySelector, string ColumnName, TextAlignment TextAlignment)[] mapping) where T : class =>
