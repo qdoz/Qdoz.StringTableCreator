@@ -58,7 +58,7 @@ namespace Qdoz.StringTableCreator
 			where TSource : class =>
 			typeof(TSource).GetProperties()
 					 .FirstOrDefault(p => p.Name == propertyName)
-					?.GetCustomAttributes(typeof(StringTableAppearanceAttribute), false)
+					?.GetCustomAttributes(typeof(TAttribute), false)
 					.FirstOrDefault() as TAttribute;
 
 

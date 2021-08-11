@@ -1,5 +1,5 @@
 ﻿using System;
-&&
+
 namespace Qdoz.StringTableCreator
 {
     [AttributeUsage(AttributeTargets.Property)]
